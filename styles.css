@@ -1,0 +1,308 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background: #111;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 32px;
+    color: gold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Home Section */
+/* Styles for the home section */
+#home {
+    background-image: url('images/bg.jpg');  /* Path to the background image */
+    background-size: cover; /* Ensures the background covers the whole section */
+    background-position: center center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    height: 140vh; /* Full-screen height */
+    color: white; /* Ensures text is visible on top of the image */
+    display: flex; /* To center content */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    text-align: center; /* Centers the text */
+    padding: 0 20px; /* Padding for responsiveness */
+}
+
+/* Additional styling for the text in the home section */
+#home .container {
+    max-width: 1200px; /* Keeps the content from stretching too wide */
+    padding: 0 15px; /* Padding for smaller screens */
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Adjust the size of the text for smaller screens */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem; /* Adjust paragraph text for smaller devices */
+    }
+}
+
+/* Optional: Add a light overlay over the background for text readability */
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+/* Services Section */
+.services {
+    background: #222;
+    padding: 60px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item h3 {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* About Us Section */
+.about {
+    background: #222;
+    padding: 60px 0;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background: #333;
+    padding: 60px 0;
+}
+
+.contact .section-title {
+    font-size: 32px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: gold;
+    color: #000;
+    padding: 14px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+}
+
+.contact-info {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: gold;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .home h2 {
+        font-size: 28px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .service-item h3 {
+        font-size: 24px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+}
+/* Footer styling */
+#footer {
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Social media icon container */
+.social-media {
+    margin-top: 10px;
+}
+
+/* Social media icon styling */
+.social-icon {
+    width: 40px; /* Set the icon size */
+    height: 40px;
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on icons */
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .social-icon {
+        width: 35px; /* Smaller icon on mobile */
+        height: 35px;
+    }
+}
