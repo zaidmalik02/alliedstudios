@@ -299,6 +299,15 @@ footer p {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
+
+
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .social-icon {
