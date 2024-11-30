@@ -18,18 +18,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: rgba(51, 51, 51, 0.6); /* Slightly translucent background */
+    padding: 15px 20px;
+    background: rgba(51, 51, 51, 0.6);
     color: white;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
+    flex-wrap: wrap;
 }
 
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 1); /* Solid background when scrolled */
+    background: rgba(0, 0, 0, 1);
 }
 
 .logo-container {
@@ -38,7 +39,7 @@ body {
 }
 
 .logo {
-    width: 160px;
+    width: 140px;
     height: auto;
     margin-right: 20px;
     transition: transform 0.3s ease;
@@ -52,7 +53,8 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -62,7 +64,7 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -97,46 +99,31 @@ body {
     position: relative;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 15px;
     background: url('images/bghome.jpg') no-repeat center center/cover;
     height: 100vh;
     background-attachment: fixed;
 }
 
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.hero-video video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 .btn-main {
-    padding: 15px 30px;
-    font-size: 1rem;
+    padding: 12px 25px;
+    font-size: 0.9rem;
     background-color: #ff6600;
     color: white;
     border-radius: 5px;
@@ -151,50 +138,50 @@ body {
 
 /* About Section */
 .about {
-    padding: 60px 20px;
+    padding: 40px 15px;
     background-color: #f4f4f4;
     text-align: center;
 }
 
 .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .about-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-text {
     max-width: 500px;
+    margin: 0 auto;
 }
 
 .about-image img {
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Portfolio Section */
 .portfolio {
-    padding: 50px 20px;
+    padding: 40px 15px;
     background: #f9f9f9;
     text-align: center;
 }
 
 .portfolio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #111;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 }
 
 .portfolio-item {
@@ -236,93 +223,54 @@ body {
 
 /* Services Section */
 .services {
-    padding: 50px 20px;
+    padding: 40px 15px;
     background: #ffffff;
     text-align: center;
 }
 
 .services h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: #111;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 }
 
 .service-item {
     background: #f7f7f7;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
-.service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
 .service-item i {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #ff4500;
-    margin-bottom: 15px;
-}
-
-.service-item:hover i {
-    color: #e63e00;
+    margin-bottom: 10px;
 }
 
 /* Contact Us Section */
 .contact-us {
-    padding: 50px 20px;
+    padding: 40px 15px;
     background: #f7f7f7;
     text-align: center;
 }
 
 .contact-us h2 {
-    font-size: 2.5em;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #111;
 }
 
 .contact-us p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact-item {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.contact-item a {
-    color: #ff4500;
-    text-decoration: none;
-}
-
-.contact-item a:hover {
-    color: #e63e00;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -330,23 +278,39 @@ footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
-/* Map Section */
-.map-section {
-    padding: 50px 20px;
-    background: #f9f9f9;
-    text-align: center;
+/* Media Queries */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 
-.map-container {
-    width: 100%;
-    max-width: 1200px;
-    height: 400px;
-    margin: 0 auto;
-    border: 5px solid #ff4500;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .btn-main {
+        font-size: 1rem;
+    }
 }
