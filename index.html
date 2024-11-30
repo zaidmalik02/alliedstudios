@@ -3,142 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Allied Studios - Creative Arts and Video Production">
+    <meta name="description" content="Allied Studios - A creative powerhouse for cinematic brilliance">
+    <meta name="keywords" content="Allied Studios, Film Production, Photography, Cinematic Brilliance, Srinagar Studios">
+    <meta name="author" content="Allied Studios">
     <title>Allied Studios</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
     <!-- Header Section -->
-    <header id="header">
-        <div class="container">
-            <h1 class="logo">Allied Studios</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Allied Studios Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h2>Bringing Stories to Life</h2>
+            <p>Your partner in creating cinematic masterpieces</p>
+            <a href="#about" class="btn-main">Explore Our Story</a>
+        </div>
+        <div class="hero-video">
+            <video autoplay loop muted>
+                <source src="path-to-your-video.mp4" type="video/mp4">
+            </video>
         </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="container">
-            <h2 class="section-title">Welcome to Allied Studios</h2>
-            <p>Your one-stop solution for creative arts, video production, and business development. We craft exceptional visual and creative experiences that captivate and inspire.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Our Journey</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Allied Studios started with a passion for filmmaking and storytelling. Over the years, we’ve evolved into a creative powerhouse, bringing together talented professionals and innovative techniques to craft cinematic masterpieces.</p>
+                <p>From film production to photography and advertising, we’ve been at the forefront of creating stories that resonate with audiences worldwide. Our commitment to excellence drives everything we do, and we’re just getting started.</p>
+                <a href="#portfolio" class="btn-main">View Our Portfolio</a>
+            </div>
+            <div class="about-image">
+                <img src="images/team-photo.jpg" alt="The Team at Allied Studios">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/forbiddden-meadows.jpg" alt="Forbidden Meadows - A breathtaking cinematic journey">
+                <div class="overlay">
+                    <h3>Forbidden Meadows</h3>
+                    <p>A breathtaking cinematic journey.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/zarub.jpg" alt="Zarub - An inspiring tale of resilience">
+                <div class="overlay">
+                    <h3>Zarub</h3>
+                    <p>An inspiring tale of resilience.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/rehnuma-mohtarram.jpg" alt="Rehnuma Mohtarram - A musical masterpiece">
+                <div class="overlay">
+                    <h3>Rehnuma Mohtarram</h3>
+                    <p>A musical masterpiece.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/kkkb.jpg" alt="KKKB - A thrilling journey of discovery">
+                <div class="overlay">
+                    <h3>KKKB</h3>
+                    <p>A thrilling journey of discovery.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
+        <h2>Our Services</h2>
+        <div class="services-grid">
             <div class="service-item">
+                <i class="fas fa-film"></i>
                 <h3>Film Production</h3>
-                <p>High-quality video production for movies, documentaries, advertisements, and creative projects.</p>
+                <p>Creating cinematic experiences with cutting-edge technology and storytelling.</p>
             </div>
             <div class="service-item">
-                <h3>Photography & Shoots</h3>
-                <p>Professional photography services for events, product shoots, and promotional campaigns.</p>
+                <i class="fas fa-camera"></i>
+                <h3>Photography</h3>
+                <p>High-quality photography capturing the essence of every moment.</p>
             </div>
             <div class="service-item">
-                <h3>Business Development</h3>
-                <p>Strategic guidance for business growth, branding, and market positioning.</p>
+                <i class="fas fa-video"></i>
+                <h3>Post-Production</h3>
+                <p>Expert editing, color grading, and visual effects for a polished final product.</p>
             </div>
             <div class="service-item">
-                <h3>Management Services</h3>
-                <p>Comprehensive project and event management solutions to ensure smooth execution.</p>
+                <i class="fas fa-bullhorn"></i>
+                <h3>Advertising</h3>
+                <p>Creative ad campaigns that captivate audiences and build brands.</p>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Allied Studios</h2>
-            <p>Allied Studios is a creative powerhouse, specializing in high-quality video production, post-production services, and business development solutions. With over three years of experience, we have been delivering exceptional creative services across multiple industries.</p>
-            <p>We pride ourselves on providing personalized services that cater to the specific needs of each client. Whether it's film production, creative photography, or business strategy, we bring creativity, passion, and professionalism to every project.</p>
-        </div>
-    </section>
-
-<section id="gallery" class="gallery">
-    <h2 class="section-title">Our Work</h2>
-    <div class="gallery-grid">
-        <img src="path/to/zarub.jpg" alt="Project 1">
-        <img src="path/to/rehnuma-mohtarram.jpg" alt="Project 2">
-        <img src="path/to/rehnuma-mohtarram.jpg" alt="Project 3">
-        <img src="path/to/rehnuma-mohtarram.jpg" alt="Project 4">
-    </div>
-</section>
-
- 
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <p>We’d love to hear from you! Get in touch for inquiries or collaborations.</p>
-            <form action="#" method="post" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-               
-                <p><strong>Location:</strong> Narbal, Jawaharpora, Budgam, Jammu And Kashmir, 193401</p>
-                <p><strong>Phone:</strong> <a href="tel:+919070033770">+91 9070033770</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us through the following channels:</p>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p><a href="tel:+916005313424">+91 6005313424</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:info@studioallied.com">info@studioallied.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <h3>Follow Us</h3>
+                <p><a href="https://www.instagram.com/studio_allied" target="_blank" rel="noopener noreferrer">@studio_allied</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Visit Us</h3>
+                <p><a href="https://www.google.com/maps?q=Studio+Allied,+Srinagar,+Jammu+&+Kashmir" target="_blank" rel="noopener noreferrer">Studio Allied, Srinagar, Jammu & Kashmir</a></p>
             </div>
         </div>
-         <!-- Embedded Google Map -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.221365534171!2d74.65970537556329!3d34.11508217313336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e199365079cc4b%3A0x86ff616f7887ff64!2sStudio%20Allied!5e0!3m2!1sen!2sin!4v1732890436488!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </section>
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <p>We’d love to hear from you! Get in touch for inquiries or collaborations.</p>
-        <form action="#" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p><strong>MD:</strong> Khadim Umar Adil Hussain</p>
-            <p><strong>Location:</strong> Studio Allied, Narbal, Jawaharpora, Budgam, Jammu And Kashmir, 193401</p>
-            <p><strong>Phone:</strong> <a href="tel:+919070033770">+91 9070033770</a></p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Allied Studios. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/studio_allied" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/studioallied" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/studio_allied" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/studio-allied" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         </div>
+    </footer>
 
-        <!-- Embedded Google Map -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.221365534171!2d74.65970537556329!3d34.11508217313336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e199365079cc4b%3A0x86ff616f7887ff64!2sStudio%20Allied!5e0!3m2!1sen!2sin!4v1732890436488!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer id="footer">
-    <div class="container">
-        <p>&copy; 2024 Allied Studios. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://www.instagram.com/studio_allied" target="_blank">
-                <i class="fab fa-instagram social-icon"></i>
-            </a>
-        </div>
-    </div>
-</footer>
-
-    
-
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
