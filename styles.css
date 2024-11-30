@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: rgba(51, 51, 51, 0.6);
+    background: rgba(255, 45, 45, 0.8); /* Chili Red */
     color: white;
     position: sticky;
     top: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 1);
+    background: #d32f2f; /* Dark Red */
 }
 
 .logo-container {
@@ -74,7 +74,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ff6600;
+    color: #ff6600; /* Vibrant Orange */
     transform: translateY(-5px);
 }
 
@@ -85,7 +85,7 @@ body {
     left: 50%;
     width: 0;
     height: 2px;
-    background: #ff6600;
+    background: #ff6600; /* Vibrant Orange */
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -124,7 +124,7 @@ body {
 .btn-main {
     padding: 12px 25px;
     font-size: 0.9rem;
-    background-color: #ff6600;
+    background-color: #ff6600; /* Vibrant Orange */
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -132,7 +132,7 @@ body {
 }
 
 .btn-main:hover {
-    background-color: #e65500;
+    background-color: #e65500; /* Darker Orange */
     transform: translateY(-3px);
 }
 
@@ -251,121 +251,123 @@ body {
 
 .service-item i {
     font-size: 2.5em;
-    color: #ff4500;
+    color: #ff4500; /* Redder Chili */
     margin-bottom: 10px;
 }
-
 /* Contact Us Section */
 .contact-us {
-    padding: 60px 20px;
-    background: #ffffff;
+    padding: 60px 15px;
+    background: #ffe0e0; /* Light Red */
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us h2 {
     font-size: 2.5rem;
-    color: #333;
     margin-bottom: 20px;
-    font-weight: 600;
+    color: #d32f2f; /* Dark Red */
+    animation: slideInFromTop 1s ease-out;
 }
 
 .contact-us p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #666;
-    line-height: 1.6;
-}
-
-.contact-form {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
+    font-size: 1rem;
     margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    background: #fff;
-    transition: border-color 0.3s ease;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-out 0.5s forwards;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #ff6600;
-    outline: none;
+/* Contact Buttons Section */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.contact-form button {
-    padding: 14px 30px;
-    background-color: #ff6600;
+.contact-button {
+    background-color: #ff6600; /* Vibrant Orange */
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #e65500;
-    transform: translateY(-3px);
-}
-
-.contact-form button:active {
-    transform: translateY(1px);
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Queries */
-@media (min-width: 768px) {
-    .about-content {
-        flex-direction: row;
-    }
+.contact-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
 
-    .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+.contact-button:hover {
+    background-color: #e65500; /* Darker Orange */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
-    .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+.contact-button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .contact-us h2 {
-        font-size: 3rem;
-    }
+.contact-button.active {
+    background: #e65500; /* Darker Orange */
+}
 
-    .contact-form {
-        padding: 30px;
+/* Animations */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
     }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 1.1rem;
-    }
-
-    .contact-form button {
-        font-size: 1.1rem;
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Developer Signature (Easter Egg) */
+.developer-signature {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4); /* Lighter color with opacity */
+    z-index: 10;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.developer-signature:hover {
+    opacity: 1; /* Becomes more visible on hover */
+}
+
