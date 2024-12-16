@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Home() {
+const Home = () => {
   return (
-    <div>
+    <section className="hero-section">
       <h1>Welcome to Allied Studios</h1>
-      <p>Your creative agency for the digital age.</p>
-    </div>
+      <p>Where creativity meets excellence</p>
+      <button className="button">Explore Now</button>
+    </section>
   );
 }
 
